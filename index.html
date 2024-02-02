@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>Bootstrap 5.1 tests</title>
+</head>
+
+
+<body>
+    
+    <section class="m-5">
+
+        <div>
+            <h1>   
+                Heading 1
+            </h1>
+            <h2>
+                Heading 2
+            </h2>
+            <h3>
+                Heading 3
+            </h3>
+            <h4>
+                Heading 4
+            </h4>
+            <h5>
+                Heading 5
+            </h5>
+            <h6>
+                Heading 6
+            </h6>
+            <p>
+                Paragraph 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sem erat, finibus posuere faucibus nec, laoreet id ipsum. Nullam dictum nunc a nibh condimentum faucibus. Ut a faucibus arcu. Sed velit justo, facilisis at porta non, euismod non tortor. Nulla facilisi. Curabitur nisl felis, pharetra in ipsum sit amet, vestibulum dictum orci. Maecenas ac leo sed tortor egestas feugiat. Integer blandit quis leo ac vestibulum. Vivamus turpis dolor, feugiat interdum dolor in, semper sodales nisl. Sed tincidunt eleifend nibh et porta. Sed vel eros tincidunt, dictum magna ut, suscipit ex. Nulla ac dui id ligula rhoncus semper ac in lectus. Aliquam rutrum sed ex nec venenatis.
+            </p>
+            <P>
+                Paragraph 2. Maecenas semper eros ut mauris interdum commodo. In sit amet massa mollis, porta nulla non, posuere tortor. In aliquam elementum semper. Cras quis neque non augue vulputate lacinia vitae et risus. Quisque volutpat eros sem, at convallis tortor interdum eget. Sed sed eros luctus, cursus massa sed, tempus augue. Nullam rhoncus dictum maximus. Etiam tristique purus nec nisl dignissim mollis. Aenean efficitur efficitur dolor eget mattis.
+            </P>
+            <p class="fs-1">.fs-1 text</p>
+            <p class="fs-2">.fs-2 text</p>
+            <p class="fs-3">.fs-3 text</p>
+            <p class="fs-4">.fs-4 text</p>
+            <p class="fs-5">.fs-5 text</p>
+            <p class="fs-6">.fs-6 text</p>
+        </div>
+
+
+        <!--BUTTON-->
+        <div>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary w-50">Primary</button>
+        </div>
+
+        
+        <!--MODAL-->
+        <div class="my-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Abrir modal
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Modal lindo
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor malesuada, consequat urna a, tristique nunc. Cras id lobortis diam. Aliquam erat volutpat. Morbi aliquam tempus nisi, ut aliquam nisi. Cras suscipit, tellus ut ullamcorper tempus, arcu neque mattis ex, eget mollis libero est vel lorem. Mauris eget scelerisque metus, id semper enim. Donec iaculis eleifend lacus at ornare. Integer lorem odio, gravida at nibh eget, sodales rhoncus dolor.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cancelar
+                        </button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                            Quero esse modal pra mim agora!
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--FORM-->
+        <div class="row">
+            <div class="col-lg-6">
+                <form>
+
+                    <div class="form-group py-4">
+                        <label for="name" class="form-label">Nome</label>
+                        <input id="name" type="text" class="form-control" placeholder="Digite seu nome" required></input>
+                    </div>
+                    
+                    <div class="form-group py-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" type="email" class="form-control" placeholder="Digite seu email" required></input>
+                    </div>
+                    
+                    <div class="form-group py-2">
+                        <label for="password" class="form-label">Senha</label>
+                        <input id="password" type="password" class="form-control" placeholder="Digite seu email" required></input>
+                    </div>
+                    
+                    <button class="btn btn-success my-4" type="submit">Enviar</button>
+                
+                </form>
+
+            </div>
+        </div>
+
+
+        <!--ACCORDION-->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
